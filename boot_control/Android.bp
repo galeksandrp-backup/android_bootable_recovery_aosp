@@ -13,25 +13,3 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-
-cc_library_shared {
-    name: "bootctrl.default",
-    recovery_available: true,
-    relative_install_path: "hw",
-
-    srcs: ["boot_control.cpp"],
-
-    cflags: [
-        "-D_FILE_OFFSET_BITS=64",
-        "-Werror",
-        "-Wall",
-        "-Wextra",
-    ],
-
-    shared_libs: [
-        "libbase",
-        "libbootloader_message",
-        "libfs_mgr",
-        "liblog",
-    ],
-}

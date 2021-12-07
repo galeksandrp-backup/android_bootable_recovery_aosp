@@ -11,18 +11,3 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
-java_library_host {
-    name: "RecoveryImageGenerator",
-
-    manifest: "ImageGenerator.mf",
-
-    static_libs: [
-        "commons-cli-1.2",
-        "icu4j-host",
-    ],
-
-    srcs: [
-        "ImageGenerator.java",
-    ],
-}

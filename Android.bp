@@ -12,20 +12,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-cc_defaults {
-    name: "recovery_defaults",
-
-    cflags: [
-        "-D_FILE_OFFSET_BITS=64",
-
-        // Must be the same as RECOVERY_API_VERSION.
-        "-DRECOVERY_API_VERSION=3",
-
-        "-Wall",
-        "-Werror",
-    ],
-}
-
 cc_library_static {
     name: "librecovery_fastboot",
     recovery_available: true,

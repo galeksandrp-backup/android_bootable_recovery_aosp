@@ -11,37 +11,3 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
-cc_library {
-    name: "libminui",
-    recovery_available: true,
-
-    defaults: [
-        "recovery_defaults",
-    ],
-
-    export_include_dirs: [
-        "include",
-    ],
-
-    srcs: [
-        "events.cpp",
-        "graphics.cpp",
-        "graphics_adf.cpp",
-        "graphics_drm.cpp",
-        "graphics_fbdev.cpp",
-        "resources.cpp",
-    ],
-
-    whole_static_libs: [
-        "libadf",
-        "libdrm",
-        "libsync",
-    ],
-
-    shared_libs: [
-        "libbase",
-        "libpng",
-        "libz",
-    ],
-}

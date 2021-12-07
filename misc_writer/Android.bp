@@ -13,28 +13,3 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 //
-
-cc_binary {
-    name: "misc_writer",
-    vendor: true,
-
-    srcs: [
-        "misc_writer.cpp",
-    ],
-
-    cpp_std: "experimental",
-
-    cflags: [
-        "-Wall",
-        "-Werror",
-    ],
-
-    shared_libs: [
-        "libbase",
-    ],
-
-    static_libs: [
-        "libbootloader_message_vendor",
-        "libfstab",
-    ],
-}

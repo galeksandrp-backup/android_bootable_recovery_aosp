@@ -11,31 +11,3 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
-cc_library {
-    name: "libfusesideload",
-    recovery_available: true,
-
-    defaults: [
-        "recovery_defaults",
-    ],
-
-    cflags: [
-        "-D_XOPEN_SOURCE",
-        "-D_GNU_SOURCE",
-    ],
-
-    srcs: [
-        "fuse_provider.cpp",
-        "fuse_sideload.cpp",
-    ],
-
-    export_include_dirs: [
-        "include",
-    ],
-
-    shared_libs: [
-        "libbase",
-        "libcrypto",
-    ],
-}
